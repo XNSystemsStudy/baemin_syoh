@@ -20,3 +20,5 @@ Ionic Sass 연습
     - 이미 정의된 swatch 중에 하나를 선택해서 html에 지정한 후에 lib/ionic/scss/\_variables.css 의 변수값을 overwrite 하면서 작업한다.
     - 해당 변수가 없는 경우에는 browser debugging 도구를 이용해서 CSS를 수정한다.
 
+## Screenshot
+![Screenshot](https://raw.githubusercontent.com/XNSystemsStudy/baemin_syoh/master/screenshot.png)
