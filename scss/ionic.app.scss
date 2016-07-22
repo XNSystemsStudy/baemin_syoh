@@ -1,0 +1,85 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #387ef5 !default;
+$calm:                            #11c1f3 !default;
+$balanced:                        #33cd5f !default;
+$energized:                       #ffc900 !default;
+$assertive:                       #ef473a !default;
+$royal:                           #886aea !default;
+$dark:                            #444 !default;
+*/
+
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+
+// tabs background color
+$tabs-dark-bg:                    #000 !default;
+
+// list image size
+$item-avatar-width:               90px !default;
+$item-avatar-height:              90px !default;
+// remove border
+$item-border-width:               0px  !default;
+
+$item-padding:                    8px  !default;
+
+// navbar text color and background color
+$bar-stable-text:                 white !default;
+$button-stable-bg:                #3c342c !default;
+
+// Include all of Ionic
+@import "www/lib/ionic/scss/ionic";
+
+.tab-item.tab-item-active, .tab-item.active, .tab-item.activated {
+    color: #FF5c00;
+}
+
+.item h2 {
+  font-weight: bold;
+}
+
+.item {
+  p.summary {
+    font-size: 12px;
+  }
+  p span {
+    font-size: 12px;
+    padding: 2px;
+    color: white;
+    margin-right: 4px;
+  }
+  p span.on {
+    background-color: #1abcaa;
+  }
+  p span.off {
+    background-color: #c1c3c4;
+  }
+}
+
+// rating
+ul.rating li {
+  display: inline;
+  border: 0px;
+  background: none;
+  padding: 0px;
+  margin: 0px;
+
+  // conflict with item-icon-right
+  // remove effects of item-icon-right
+  i {
+    position: static !important;
+    display: inline !important;
+  }
+  .icon:before {
+    display: inline-block !important;
+    font-size: 14px !important;
+    color: #ffba00;
+    width: 14px;
+  }
+}

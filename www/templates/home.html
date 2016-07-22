@@ -1,0 +1,15 @@
+<ion-view title="치킨" id="page2" class=" ">
+    <ion-content class="has-header">
+        <ion-list id="home-list1" class=" ">
+          <ion-item class="item-avatar item-icon-right" ng-repeat="store in stores" type ="item-text-wrap"
+          href="#/stores/{{store.id}}">
+            <img ng-src="{{store.mainmenu}}" width="90px" height="90px">
+            <rating ng-model="store.rate" max="5" readonly="readOnly"></rating>
+            <h2>{{store.name}}</h2>
+            <p class="summary">리뷰 {{store.countReview}} ・ 사진 {{store.countPicture}} ・   사장님댓글 {{store.countReply}}</p>
+            <p><span ng-class="store.isOrderCall ? 'on' : 'off'">전화주문</span><span ng-class="store.isBillBefore ? 'on' : 'off'">바로결제</span><span ng-class="store.isBillAfter ? 'on' : 'off'">만나서결제</span></p>
+            <i class="icon ion-chevron-right icon-accessory"></i>
+          </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>
